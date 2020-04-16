@@ -2,9 +2,73 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>WEB222 Store - Contact</title>
+    <title>DEALER SMEALERS</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
   </head>
   <body>
+
+    <div class="contact-title">
+      <h1>CHEAP GOOD RELIABLE</h1>
+      <h2>SHOOT US AN ORDER!</h2>
+    </div>
+
+    <div class="">
+      <form action="https://httpbin.org/post" id="contact-form" method="POST">
+        <input type="text" class="form-control" class="fname"  placeholder="Your first name" required>
+        <br><br>
+        <input type="text" class="form-control" class="lname"  placeholder="Your last name" required>
+        <br><br>
+        <input type="email" class="form-control" class="email" placeholder="Your Email address" required>
+        <br><br>
+        <input list="City" class="form-control">
+
+          <datalist id="City">
+          <option value="Toronto">
+          <option value="Vancouver">
+          <option value="Montreal">
+          <option value="Ottawa">
+          <option value="Calgary">
+
+        </datalist>
+        <br><br>
+
+        <input type="tel" class="form-control" class="tel" placeholder="(+1) Your phone number" required>
+
+        <br><br>
+
+        <input type="text" class="form-control" class="zip" placeholder="ZIP Code" pattern="??? ???" required>
+
+        <br><br>
+
+        <p>Would you like us to contact you?</p>
+        <input type="checkbox" id="Yes" name="call" value="Yes" >
+        <label for="Yes"> YE FOSHO CALL ME</label><br>
+        <input type="checkbox" id="No" name="NOcall" value="No" >
+        <label for="No"> NAH B DON'T CALL ME</label><br>
+
+        <br>
+        <p>Reason</p>
+        <input type="radio" id="Order Problem" name="query" value="Order Problem">
+        <label for="Order Problem">Order Problem</label><br>
+        <div class="reveal-if-active">
+          <input type="text" id="Order Num" name="ONUM" placeholder="Order Number" ><br>
+        </div>
+
+        <input type="radio" id="Comment" name="query" value="Comment">
+        <label for="Comment">Comment</label><br>
+       
+        <input type="radio" id="Question" name="query" value="Question">
+        <label for="Question">Question</label><br>
+
+        <br>
+
+        <textarea name="message" class="form-control" placeholder="Message" row="4"></textarea><br>
+
+        <input type="hidden" id="NGUYENHOANGDUY" name="NGUYENHOANGDUY" value="NGUYENHOANGDUY">
+
+        <input type="submit" class="form-control submit" value="SEND ORDER">
+      </form>
+    </div>
     <!--    
 
     Part 2: Contact Us Page
