@@ -195,10 +195,32 @@ input[type=text] {
   }
 
   form {
-      border: solid 1px;
-      margin: 0 auto;
-      bottom: 10px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(rgbaa(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5));
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    border: solid 1px;
+    margin: 0 auto;
+    bottom: 10px;
+    background: url(/images/Untitled.png);
   }
 
 
-  
+  .form{
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+
+.form-control{
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
